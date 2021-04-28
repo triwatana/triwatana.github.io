@@ -1,3 +1,11 @@
+/* 
+Color palette:
+red -> rgb(255, 107, 107) 
+blue -> rgb(107, 208, 255) 
+yellow -> rgb(255, 210, 64) 
+*/
+
+
 * {
     margin: 0;
     padding: 0;
@@ -15,13 +23,9 @@ ul {
 
 .header {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    background-color: rgb(24, 23, 23); 
-    /* background-image: url(img/ProfilePic2.png);
-    background-position: center;
-    background-size: 30%;
-    background-repeat: no-repeat; */
+    background-color: rgb(255, 255, 255); 
 }
 
 .header .navbar{
@@ -33,7 +37,7 @@ ul {
 }
 
 .header .navbar .logo a{
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 30px;
     margin-left: 50px;
 }
@@ -49,14 +53,14 @@ ul {
 }
 
 .header .navbar .menu ul li a{
-    color: #fff;
+    color: rgb(0, 0, 0);
    font-size: 18px;
    font-weight: 500;
    letter-spacing: 1px;
 }
 
 .header .navbar .menu ul li a:hover{
-    color:rgb(107, 208, 255);
+    color:rgb(255, 210, 64);
     font-size: 20px;
 }
 
@@ -73,13 +77,13 @@ ul {
 }
 
 .header .contact-info ul li a{
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 14px;
     transition: all 0.3s;
 }
 
 .header .contact-info ul li a:hover{
-    color:rgb(107, 208, 255);
+    color:rgb(255, 107, 107);
 
 }
 header .contact-info ul li a:sep{
@@ -91,20 +95,31 @@ header .contact-info ul li a:sep{
     position: absolute;
     top: 35%;
     left: 0;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
-.header .banner .app-text {
-    padding-left: 440px;;
-}
 
 .header .banner .app-text h1 {
     font-size: 80px; 
+    padding-left: 200px;
     position: relative;
     margin-top: 30px;
     font-weight: 700;
    line-height: 1.2;
 }
+
+#profile {
+    position: relative;
+    top: -250px;
+    left: 500px;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+
+
 
 .header .banner .app-text h1 span{
     color:rgb(107, 208, 255);
@@ -112,6 +127,7 @@ header .contact-info ul li a:sep{
 .header .banner .app-text h1:hover{
   animation: shake 0.8s;
 }
+
 @keyframes shake{
     0%{
       transform: translateX(0)

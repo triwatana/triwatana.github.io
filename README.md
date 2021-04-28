@@ -1,2 +1,1 @@
-# triwatana.github.io
-Personal Website
+# triwatana
