@@ -43,7 +43,7 @@ ul {
 }
 
 .header .navbar .menu ul{
-    margin-left: 190px;
+    margin-left: 280px;
 }
 
 .header .navbar .menu ul li{
@@ -61,7 +61,6 @@ ul {
 
 .header .navbar .menu ul li a:hover{
     color:rgb(255, 210, 64);
-    font-size: 20px;
 }
 
 .header .contact-info {
@@ -69,7 +68,7 @@ ul {
 }
 
 .header .contact-info ul{
-    margin-left: 10px;
+    margin-left: 100px;
 }
 
 .header .contact-info ul li{
@@ -101,7 +100,7 @@ header .contact-info ul li a:sep{
 
 .header .banner .app-text h1 {
     font-size: 80px; 
-    padding-left: 200px;
+    padding-left: 300px;
     position: relative;
     margin-top: 30px;
     font-weight: 700;
@@ -116,10 +115,10 @@ header .contact-info ul li a:sep{
     margin-right: auto;
     margin-left: auto;
     display: block;
+    border-color: black;
+    border-style: solid;
+    border-width: thick;
 }
-
-
-
 
 .header .banner .app-text h1 span{
     color:rgb(107, 208, 255);
