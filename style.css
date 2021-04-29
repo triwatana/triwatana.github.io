@@ -24,7 +24,7 @@ ul {
 .header {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 100px;
     background-color: rgb(255, 255, 255); 
 }
 
@@ -39,11 +39,11 @@ ul {
 .header .navbar .logo a{
     color: rgb(0, 0, 0);
     font-size: 30px;
-    margin-left: 50px;
+    margin-left: 80px;
 }
 
 .header .navbar .menu ul{
-    margin-left: 280px;
+    margin-left: 400px;
 }
 
 .header .navbar .menu ul li{
@@ -53,9 +53,9 @@ ul {
 }
 
 .header .navbar .menu ul li a{
-    color: rgb(0, 0, 0);
+   color: rgb(0, 0, 0);
    font-size: 18px;
-   font-weight: 500;
+   font-weight: 100;
    letter-spacing: 1px;
 }
 
@@ -63,34 +63,7 @@ ul {
     color:rgb(255, 210, 64);
 }
 
-.header .contact-info {
-    margin-left: 20px;
-}
-
-.header .contact-info ul{
-    margin-left: 100px;
-}
-
-.header .contact-info ul li{
-    display: inline-block;
-}
-
-.header .contact-info ul li a{
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    transition: all 0.3s;
-}
-
-.header .contact-info ul li a:hover{
-    color:rgb(255, 107, 107);
-
-}
-header .contact-info ul li a:sep{
-    margin: 0 28px;
-    opacity: 0.3;
-}
- 
-.header .banner {
+ .banner {
     position: absolute;
     top: 35%;
     left: 0;
@@ -98,9 +71,10 @@ header .contact-info ul li a:sep{
 }
 
 
-.header .banner .app-text h1 {
+ .banner .app-text h1 {
     font-size: 80px; 
     padding-left: 300px;
+    padding-right: 300px;
     position: relative;
     margin-top: 30px;
     font-weight: 700;
@@ -110,26 +84,34 @@ header .contact-info ul li a:sep{
 #profile {
     position: relative;
     top: -250px;
-    left: 500px;
+    left: 400px;
+    right: 200px;
     width: 300px;
     margin-right: auto;
     margin-left: auto;
     display: block;
     border-color: black;
     border-style: solid;
+    border-radius: 20px;
     border-width: thick;
 }
 
-.header .banner .app-text h1 span{
+ .banner .app-text h1 span{
     color:rgb(107, 208, 255);
 }
-.header .banner .app-text h1:hover{
+ .banner .app-text h1:hover{
   animation: shake 0.8s;
 }
 
+.banner footer {
+    text-align: center;
+    font-size: 20px;
+}
+
+
 @keyframes shake{
     0%{
-      transform: translateX(0)
+      transform: translateX(0px)
     }
     25%{
       transform: translateX(25px);
@@ -142,3 +124,83 @@ header .contact-info ul li a:sep{
       transform: translateX(0px);
     }
   }
+
+  .flexbox {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 60px; 
+}
+
+.flexbox .item {
+    display: block;
+    box-sizing: border-box;
+    width: 420px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.content {
+    background-color: aliceblue;
+    text-align: center;
+    overflow-wrap: break-word;
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+  .gallery-wrapper {
+    background-color: #e7dfdf;
+    box-sizing: border-box;
+    height: 195px;
+    overflow: hidden;
+  }
+  
+  .gallery-scroll {
+    box-sizing: border-box;
+    height: 195px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  .gallery {
+    background-color: #e7dfdf;
+    display: flex;
+    box-sizing: border-box;
+    width: max-content;
+    height: 180px;
+    padding: 0px 8px;
+  }
+  
+  .item {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 16px 8px;
+  }
+  
+  .item img {
+    display: block;
+    height: 100%;
+    border: 3px solid black;
+    border-radius: 12px;
+  }
+
+  .background-info {
+      font-size: 20px;
+      border: 3px solid black;
+      border-radius: 20px;
+      padding: 20px 20px;
+      width: 620px;
+      margin-left: 80px;
+      margin-top: 80px;
+  }
+
+  .background-info p a {
+    color:rgb(255, 107, 107);
+}
