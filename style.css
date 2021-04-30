@@ -24,7 +24,7 @@ ul {
 .header {
     position: relative;
     width: 100vw;
-    height: 100px;
+    min-height: 20vh;
     background-color: rgb(255, 255, 255); 
 }
 
@@ -43,7 +43,8 @@ ul {
 }
 
 .header .navbar .menu ul{
-    margin-left: 400px;
+    margin-left: 300px;
+
 }
 
 .header .navbar .menu ul li{
@@ -76,7 +77,7 @@ ul {
     padding-left: 300px;
     padding-right: 300px;
     position: relative;
-    margin-top: 30px;
+    margin-top: 100px;
     font-weight: 700;
    line-height: 1.2;
 }
@@ -125,6 +126,8 @@ ul {
     }
   }
 
+ 
+
   .flexbox {
     display: flex;
     box-sizing: border-box;
@@ -146,6 +149,11 @@ ul {
     margin-bottom: 20px;
 }
 
+.flexbox .item .content:hover{
+  box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 0.87);
+}
+
+
 .content {
     background-color: aliceblue;
     text-align: center;
@@ -154,6 +162,7 @@ ul {
     padding: 20px;
     border-radius: 20px;
 }
+
 
   .gallery-wrapper {
     background-color: #e7dfdf;
@@ -204,3 +213,25 @@ ul {
   .background-info p a {
     color:rgb(255, 107, 107);
 }
+
+/* FOOTER */
+footer {
+	 position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 120px;  
+   background-color: aliceblue;
+   border-style: solid;
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer ul, footer li, footer p{
+	  list-style-type: none;
+    margin: 10px;
+    display: inline-block;
+    font-size: 20px;
+}
+
