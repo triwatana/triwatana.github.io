@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f1faee;
+}
+
+html {
+  font-family: "Josefin Sans", sans-serif;
+  color: #2d3142;
+  font-weight: 100;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #f6bd60;
+}
+
+a:hover {
+  color: #f6bd60b7;
+}
+
+#name-pro {
+  color: #b6b3b9;
+}
+
+.bio {
+  margin: 200px 200px;
+  font-size: 36px;
+}
+
+.header .nav ul li {
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 100px;
+  align-items: center;
+  font-size: 24px;
+}
+
+#about-paragraph {
+  font-weight: 400;
+  font-size: 1.5rem;
+  border: 5px #2d3142 solid;
+  border-radius: 15px;
+  width: 580px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+#pfp {
+  width: 200px;
+  border: 5px #2d3142 solid;
+  border-radius: 15px;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#pfp:hover {
+  box-shadow: 3px 3px #f6bd60, 4px 4px #f6bd60, 5px 5px #f6bd60;
+  -webkit-transform: translateX(-5px);
+  transform: translateX(-5px);
+}
+
+/* Menu Code from Erik Terwan   
+  24th of November 2015   
+  MIT License */
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #2d3142;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: #f6bd60;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0;
+  z-index: 2;
+
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #2d3142;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #2d3142;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: absolute;
+  width: 200px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+.flexbox {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 80px;
+  margin-left: 100px;
+  margin-right: 60px;
+}
+
+.flexbox .item {
+  display: block;
+  box-sizing: border-box;
+  width: 400px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.flexbox .item .content:hover {
+  box-shadow: 5px 5px 0px 1px #d8d5db;
+}
+
+.content {
+  text-align: center;
+  overflow-wrap: break-word;
+  border: 3px solid #f1faee;
+  padding: 20px;
+  border-radius: 20px;
+  background: #1d3557;
+}
+
+.gallery-wrapper {
+  box-sizing: border-box;
+  height: 195px;
+  overflow: hidden;
+}
+
+.gallery-scroll {
+  box-sizing: border-box;
+  height: 195px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.gallery {
+  display: flex;
+  box-sizing: border-box;
+  width: max-content;
+  height: 180px;
+  padding: 0px 8px;
+}
+
+.item {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 16px 8px;
+}
+
+.item img {
+  display: block;
+  height: 100%;
+  border: 3px solid #2d3142;
+  border-radius: 12px;
+}
+
+.flexbox .item .content h3,
+.flexbox .item .content p,
+.flexbox .item .content a {
+  background: #1d3557;
+  color: #f1faee;
+}
+
+.flexbox .item .content a {
+  color: #f6bd60;
+  font-weight: 900;
+}

@@ -1,91 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <title>Projects | Tri Watanasuparp</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://api.fontshare.com/css?f[]=satoshi@400,401,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" type="image/ico" href="/icons/favicon.ico" />
-  </head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="shortcut icon" type="image/ico" href="./icons/favicon.ico" />
 
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,600;0,700;1,100&display=swap");
+    </style>
+  </head>
   <body>
     <div class="header">
-      <div class="navbar">
-        <div class="logo">
-          <a href="index.html">TW</a>
-        </div>
-        <div>
-          <div class="menu">
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="experience.html">Experience</a></li>
-              <li><a href="https://bit.ly/3s0VTGB">Resume</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <!-- <div class="nav">
+      <ul>
+        <li><a href="about.html">about me</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </div>
+  </div> -->
 
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="index.html"><li>home</li></a>
+            <a href="about.html"><li>about me</li></a>
+            <a href="projects.html"><li>projects</li></a>
+            <a href="blog.html"><li>blog</li></a>
+            <a href="contact.html"><li>contact</li></a>
+            <a
+              href="https://drive.google.com/file/d/1BJb8pjhUtGQLUfCYARQS1U45qr5DTQg6/view?usp=sharing"
+              target="_blank"
+              ><li>resume</li></a
+            >
+          </ul>
+        </div>
+      </nav>
       <div class="flexbox">
         <div class="item">
           <div class="content">
             <h3>Image Processor</h3>
-            <p>description</p>
+            <br />
+            <p>
+              Developed a Java application using the MVC (Model-View-Controller)
+              design pattern to apply various color transformations and filters
+              to multi-layered images. Supported features include: blur,
+              sharpen, sepia tone, greyscale, and generating configurable mazes.
+              Designed a user-friendly GUI interface using Java Swing.
+            </p>
+            <br />
+            <a href="">link</a>
           </div>
         </div>
         <div class="item">
           <div class="content">
             <h3>Frecell-Solitaire</h3>
+            <br />
+            <p>
+              A Java implementation of the popular single-player Solitaire-type
+              game: "Freecell."
+            </p>
+            <br />
+            <a href="">link</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content">
+            <h3>Name 3</h3>
+            <br />
             <p>description</p>
+            <br />
+            <a href="">link</a>
           </div>
         </div>
         <div class="item">
           <div class="content">
-            <h3>Name2</h3>
-            <h4>Description</h4>
-            <h4>Description</h4>
-            <h4>Description</h4>
-            <h4>Description</h4>
-            <h4>Description</h4>
-            <h4>Description</h4>
+            <h3>Name 4</h3>
+            <br />
+            <p>description</p>
+            <br />
+            <a href="">link</a>
           </div>
         </div>
         <div class="item">
           <div class="content">
-            <h3>Name3</h3>
-            <h4>Description</h4>
-            <h4>Description</h4>
-            <h4>Description</h4>
-            <h4>Description</h4>
-            <h4>Description</h4>
-            <h4>Description</h4>
-          </div>
-        </div>
-        <div class="item">
-          <div class="content">
-            <h3>Name4</h3>
-            <h4>Description</h4>
-            <h4>Description</h4>
-            <h4>Description</h4>
-            <h4>Description</h4>
-            <h4>Description</h4>
-            <h4>Description</h4>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="content">
-            <h3>Name5</h3>
-            <h4>Description</h4>
-            <h4>Description</h4>
-            <h4>Description</h4>
-            <h4>Description</h4>
-            <h4>Description</h4>
-            <h4>Description</h4>
+            <h3>Name 5</h3>
+            <br />
+            <p>description</p>
+            <br />
+            <a href="">link</a>
           </div>
         </div>
       </div>
@@ -94,16 +107,28 @@
         <div class="gallery-scroll">
           <div class="gallery">
             <div class="item">
-              <img src="img//lightbulb copy.JPG" alt="Lightbulb" />
+              <img src="images/lightbulb copy.JPG"Lightbulb" />
             </div>
             <div class="item">
-              <img src="img/iceCream.JPG" alt="Mangosteen Ice Cream" />
+              <img src="images/sunset.JPG" alt="sunset and field" />
             </div>
             <div class="item">
-              <img src="img/donut.JPG" alt="Donut" />
+              <img src="images/iceCream.JPG" alt="Mangosteen Ice Cream" />
             </div>
             <div class="item">
-              <img src="img/chelseaMarket.JPG" alt="Chelsea Market Bridge" />
+              <img src="images/chelseaMarket.JPG" alt="Chelsea Market Bridge" />
+            </div>
+            <div class="item">
+              <img src="images/donut.JPG" alt="Donut" />
+            </div>
+            <div class="item">
+              <img src="images/spaghetti.jpg" alt="spaghetti" />
+            </div>
+            <div class="item">
+              <img src="images/plantbw.JPG" alt="Plant in Black and White" />
+            </div>
+            <div class="item">
+              <img src="images/pineapple.JPG" alt="Mini Pineapple" />
             </div>
           </div>
         </div>
