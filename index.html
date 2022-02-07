@@ -1,45 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home | Tri Watanasuparp</title>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="main.css" />
-    <link rel="shortcut icon" type="image/ico" href="./icons/favicon.ico" />
-
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,600;0,700;1,100&display=swap");
-    </style>
+    <title>Tri Watanasuparp | Front-end Developer</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/TypingLaptop.png"
+      hreflang="en-us"
+    />
+    <meta
+      name="description"
+      content="An aspiring front-end developer focused on
+          creating unique + exciting products & experiences"
+    />
+    <meta
+      name="keywords"
+      content="design, development, web, triwatana, tri, watanasuparp, northeastern, computer science, business"
+    />
+    <link
+      href="https://api.fontshare.com/css?f[]=satoshi@300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="header">
+    <main>
+      <!-- ***********************  ABOUT / PROFILE  *********************** -->
+      <header class="intro">
+        <h1 class="intro-hello">
+          Hi there!<span class="emoji-hand-wave">👋🏼</span>
+        </h1>
+        <h2 class="intro-tagline">
+          I'm <strong>Tri Watanasuparp</strong>, an aspiring front-end software
+          engineer focused on creating unique + exciting products & experiences.
+          <span class="emoji-coder">💻&nbsp;✨</span>
+          <h2 class="intro-tagline">developer ⋅ designer ⋅ adventurer</h2>
+        </h2>
+        <h3 class="intro-contact">
+          <p>
+            Get in touch 👉🏼
+            <a
+              href="mailto:watanasuparp.t@northeastern.edu"
+              target="_blank"
+              class="highlight-link"
+              >watanasuparp.t@northeastern.edu</a
+            >
+          </p>
+        </h3>
+      </header>
 
-  <nav role="navigation">
-  <div id="menuToggle">
-    <input type="checkbox" />
-  
-    <span></span>
-    <span></span>
-    <span></span>
+      <!-- ********************  BACKGROUND  ********************* -->
 
-    <ul id="menu">
-      <a href="index.html"><li>home</li></a>
-      <a href="about.html"><li>about me</li></a>
-      <a href="projects.html"><li>projects</li></a>
-      <a href="https://docs.google.com/document/d/1z03gpHs6MGq_-F2q1saHwRIt3YYaStzgP4fwPzjedCQ/edit?usp=sharing" target="_blank"><li>resume</li></a>
-    </ul>
-  </div>
-</nav>
-</div>
-    
-    <div class="bio">
-      <h1>TRI WATANASUPARP</h1>
-      <h2 id="name-pro">[try wuh-tuh-nuh-soo-parrp]</h3>
-      <h3>developer • designer • explorer</h4>
-      <h4><a href="https://www.khoury.northeastern.edu/programs/bs-combined-major-for-computer-science-and-business/" 
-        id="csbs">computer science & business administration @ northeastern university.</a>   
-      </h4>
-    </div>
+      <section class="section background">
+        <div class="section-title">background</div>
+        <div class="section-content">
+          <p>
+            I'm a second year student at
+            <a
+              class="underline-link"
+              href="https://www.northeastern.edu/"
+              target="_blank"
+              >Northeastern University</a
+            >
+            pursuing a combined major in
+            <a
+              class="underline-link"
+              href="https://www.khoury.northeastern.edu/programs/bs-combined-major-for-computer-science-and-business/"
+              target="_blank"
+              >computer science and business administration</a
+            >. In particular, I enjoy working on interesting projects that lie
+            at the intersection of
+            <strong>technology, business, and design</strong>.
+          </p>
+          <p>
+            Currently, I'm working as a Digital Marketing & Analysis Co-op at
+            <a
+              class="underline-link"
+              href="https://www.svb.com/"
+              target="_blank"
+              >Silicon Valley Bank</a
+            >. As a key member of the digital marketing team, I provide
+            analytics, graphic design, website, podcast production, and social
+            advertising support. I also analyze marketing metrics, build
+            standard reports and dashboards, and help identify cause and effect
+            relationships for email marketing campaigns, website traffic,
+            content marketing, social media marketing, and paid advertising. *I
+            am actively seeking Summer 2022 internships (available from June to
+            August 2022), preferably remote or in the Boston/NYC area.
+          </p>
+          <p>
+            <strong>When I'm not in front of a computer screen</strong>, I'm
+            probably learning some new dance moves, taking photos on my Canon
+            EOS 77D camera, or listening to inspirational podcasts.
+          </p>
+        </div>
+      </section>
+
+      <!-- ********************  SKILLS  ********************* -->
+
+      <section class="section skills">
+        <div class="section-title">skills</div>
+        <div class="section-content">
+          <div class="skills-wrapper">
+            <div class="skills-category">
+              <div class="skills-category-label">Languages</div>
+              <ul>
+                <li class="skills-category-item">Java</li>
+                <li class="skills-category-item">JavaScript</li>
+                <li class="skills-category-item">HTML</li>
+                <li class="skills-category-item">CSS</li>
+                <li class="skills-category-item">SQL</li>
+                <li class="skills-category-item">R</li>
+                <li class="skills-category-item">Racket</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <div class="skills-category-label">Frameworks</div>
+              <ul>
+                <li class="skills-category-item">React</li>
+                <li class="skills-category-item">Node</li>
+                <li class="skills-category-item">JUnit</li>
+                <li class="skills-category-item">Flask</li>
+                <li class="skills-category-item">Chakra UI</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <div class="skills-category-label">Tools</div>
+              <ul>
+                <li class="skills-category-item">IntelliJ</li>
+                <li class="skills-category-item">Visual Studio Code</li>
+                <li class="skills-category-item">Git & Github</li>
+                <li class="skills-category-item">Google Workspace</li>
+                <li class="skills-category-item">Microsoft Office</li>
+                <li class="skills-category-item">Chrome DevTools</li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <div class="skills-category-label">Design/Creative</div>
+              <ul>
+                <li class="skills-category-item">Figma</li>
+                <li class="skills-category-item">Adobe InDesign</li>
+                <li class="skills-category-item">Adobe Photoshop</li>
+                <li class="skills-category-item">Adobe Premiere Pro</li>
+                <li class="skills-category-item">Adobe XD</li>
+                <li class="skills-category-item">Prototyping</li>
+                <li class="skills-category-item">Wireframing</li>
+                <li class="skills-category-item">User Testing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***********************  WORK EXPERIENCE  *********************** -->
+      <section class="section experience">
+        <div class="section-title">experience</div>
+        <div class="section-content">
+          <div class="jobs">
+            <div class="job">
+              <div class="place-time">
+                <div class="job-company">
+                  <a href="https://www.svb.com/" target="_blank"
+                    >Silicon Valley Bank</a
+                  >
+                </div>
+                <div class="job-time">Jan 2022 - Present</div>
+              </div>
+              <div class="job-position">Digital Marketing & Analysis Co-op</div>
+            </div>
+            <div class="job">
+              <div class="place-time">
+                <div class="job-company">
+                  <a href="https://wecodeucate.org/" target="_blank"
+                    >Codeucate</a
+                  >
+                </div>
+                <div class="job-time">July - Aug 2020</div>
+              </div>
+              <div class="job-position">Marketing Intern</div>
+            </div>
+            <div class="job">
+              <div class="place-time">
+                <div class="job-company">
+                  <a href="https://www.thhskey.club/" target="_blank"
+                    >Townsend Harris High School Key Club
+                  </a>
+                </div>
+                <div class="job-time">July 2018 - Sep 2019</div>
+              </div>
+              <div class="job-position">Webmaster, Executive Board Member</div>
+            </div>
+          </div>
+          <a href="https://bit.ly/34myqIo" target="_blank" class="arrow-link"
+            >View My Resume</a
+          >
+        </div>
+      </section>
+
+      <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+      <section class="section projects">
+        <div class="section-title">projects</div>
+        <div class="section-content">
+          <div class="projects">
+            <div class="project">
+              <div class="project-name">Image Processor</div>
+              <p>
+                An image processing application built in Java and visualized
+                with Swing. The program allows for six different image filters
+                as well as layering and importing/exporting images in various
+                formats.
+              </p>
+              <div class="project-used">
+                <span class="project-used-item">Java</span>
+                <span class="project-used-item">JUnit</span>
+                <span class="project-used-item">Swing</span>
+                <span class="project-used-item">Object-Oriented Design</span>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-name">FreeCell Solitaire</div>
+              <p>
+                A text-based Java program of the popular single-player
+                multi-move FreeCell solitaire game using the
+                model-view-controller (MVC) design pattern.
+              </p>
+              <div class="project-used">
+                <span class="project-used-item">Java</span>
+                <span class="project-used-item">JUnit</span>
+                <span class="project-used-item">MVC</span>
+                <span class="project-used-item">Object-Oriented Design</span>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-name">Maze of Twisty Passages</div>
+              <p>
+                A Java desktop game that uses Kruskal's Algorithm to generate
+                mazes and allows players to choose between depth-first search,
+                breadth-first search, or manual control.
+              </p>
+              <div class="project-used">
+                <span class="project-used-item">Java</span>
+                <span class="project-used-item">JUnit</span>
+                <span class="project-used-item">Algorithms & Data</span>
+                <span class="project-used-item">Object-Oriented Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+      <footer>
+        <div class="footer-links">
+          <a href="mailto:watanasuparp.t@northeastern.edu">email </a>
+          <a href="https://github.com/triwatana" target="_blank">github</a>
+          <a
+            href="https://www.linkedin.com/in/tri-watanasuparp/"
+            target="_blank"
+            >linkedin</a
+          >
+          <a href="https://www.facebook.com/tri.watanasuparp/" target="_blank"
+            >facebook</a
+          >
+          <a href="https://www.instagram.com/triwatana/" target="_blank"
+            >linkedin</a
+          >
+        </div>
+      </footer>
+    </main>
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
