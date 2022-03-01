@@ -473,9 +473,7 @@ section {
   background: #7fb8f5;
   content: "";
   opacity: 0;
-  -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  transition: height 0.3s, opacity 0.3s, transform 0.3s;
+
   transition: height 0.3s, opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
