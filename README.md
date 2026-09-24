@@ -7,7 +7,6 @@ This is my personal portfolio website showcasing my experience, technical skills
 The site highlights my work in machine learning, natural language processing (NLP), and data-driven application development, including recommender systems and real-time data pipelines.
 
 👉 Live Site: https://triwatana.github.io/
-👉 Resume: Tri_Watanasuparp_Resume_2026.pdf
 
 ---
 
