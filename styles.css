@@ -49,16 +49,13 @@ h3,
 p {
   margin-top: 0;
 }
-
 strong {
   font-weight: 700;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -76,7 +73,8 @@ a:hover {
   opacity: 0.62;
 }
 
-/* QUICK NAV */
+/* ---------- Quick nav ---------- */
+
 .quick-nav {
   position: sticky;
   top: 20px;
@@ -115,31 +113,6 @@ a:hover {
   color: #111;
   background: #f3f3f3;
   transform: translateY(-1px);
-}
-
-/* MOBILE */
-@media (max-width: 700px) {
-  .quick-nav {
-    top: 10px;
-    margin-bottom: 30px;
-  }
-
-  .quick-nav-inner {
-    max-width: calc(100vw - 24px);
-    overflow-x: auto;
-    justify-content: flex-start;
-    scrollbar-width: none;
-  }
-
-  .quick-nav-inner::-webkit-scrollbar {
-    display: none;
-  }
-
-  .quick-nav a {
-    flex-shrink: 0;
-    padding: 7px 11px;
-    font-size: 0.74rem;
-  }
 }
 
 /* ---------- Intro ---------- */
@@ -241,10 +214,29 @@ a:hover {
   min-width: 0;
 }
 
-/* ---------- How I work ---------- */
+/* ---------- Experience / job cards ---------- */
 
-.section-content > .job + .job {
-  margin-top: 34px;
+.section-content .job {
+  margin: 0 0 18px;
+  padding: 26px 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.035);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.section-content .job:last-child {
+  margin-bottom: 0;
+}
+
+.section-content .job:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 7px 22px rgba(0, 0, 0, 0.055);
+  transform: translateY(-1px);
 }
 
 .job-position {
@@ -259,16 +251,6 @@ a:hover {
   max-width: 760px;
   margin-bottom: 0;
   color: var(--muted);
-}
-
-/* ---------- Experience ---------- */
-
-.job {
-  margin-bottom: 48px;
-}
-
-.job:last-child {
-  margin-bottom: 0;
 }
 
 .place-time {
@@ -323,20 +305,29 @@ a:hover {
   color: var(--subtle);
 }
 
-/* ---------- Projects ---------- */
+/* ---------- Project cards ---------- */
 
-.project {
-  padding: 30px 0;
-  border-bottom: 1px solid var(--border);
+.section-content .project {
+  margin: 0 0 18px;
+  padding: 26px 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.035);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
 }
 
-.project:first-child {
-  padding-top: 0;
+.section-content .project:last-child {
+  margin-bottom: 0;
 }
 
-.project:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
+.section-content .project:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 7px 22px rgba(0, 0, 0, 0.055);
+  transform: translateY(-1px);
 }
 
 .project-name {
@@ -418,7 +409,7 @@ a:hover {
 /* ---------- Education ---------- */
 
 .education .job {
-  margin-bottom: 32px;
+  margin-bottom: 18px;
 }
 
 .education .job:last-child {
@@ -481,6 +472,30 @@ a:hover {
   }
 }
 
+@media (max-width: 700px) {
+  .quick-nav {
+    top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .quick-nav-inner {
+    max-width: calc(100vw - 24px);
+    overflow-x: auto;
+    justify-content: flex-start;
+    scrollbar-width: none;
+  }
+
+  .quick-nav-inner::-webkit-scrollbar {
+    display: none;
+  }
+
+  .quick-nav a {
+    flex-shrink: 0;
+    padding: 7px 11px;
+    font-size: 0.74rem;
+  }
+}
+
 @media (max-width: 560px) {
   body {
     font-size: 15px;
@@ -494,11 +509,9 @@ a:hover {
   .intro-hello {
     font-size: 2.5rem;
   }
-
   .intro-tagline {
     font-size: 1.5rem;
   }
-
   .intro-contact {
     line-height: 2;
   }
@@ -512,18 +525,19 @@ a:hover {
     margin-top: 4px;
   }
 
-  .job {
-    margin-bottom: 40px;
+  .section-content .job,
+  .section-content .project {
+    padding: 21px 20px;
+    border-radius: 12px;
+    margin-bottom: 14px;
   }
 
   .project-name {
     font-size: 1.13rem;
   }
-
   .project-used {
     gap: 6px;
   }
-
   .footer-links {
     gap: 15px 20px;
   }
@@ -534,5 +548,14 @@ a:hover {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .emoji-hand-wave {
+    animation: none;
+  }
+
+  .section-content .job,
+  .section-content .project {
+    transition: none;
   }
 }
