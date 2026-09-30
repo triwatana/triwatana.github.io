@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Tri Watanasuparp — Data Scientist focused on data analytics, machine learning, NLP, recommendation systems, data engineering, and turning complex data into actionable insights."
+      content="Tri Watanasuparp — Data Scientist building NLP, LLM-evaluation, recommendation, and data-quality pipelines in Python and SQL."
     />
     <meta
       name="keywords"
-      content="Tri Watanasuparp, Data Scientist, Python, SQL, Data Analytics, Machine Learning, NLP, Recommendation Systems, BigQuery, Tableau"
+      content="Tri Watanasuparp, Data Scientist, Python, SQL, NLP, LLM Evaluation, Semantic Search, Recommendation Systems, BigQuery, Tableau"
     />
     <title>Tri Watanasuparp | Data Scientist</title>
-
     <link rel="stylesheet" href="styles.css" />
-
     <link
       href="https://api.fontshare.com/css?f[]=satoshi@300,400,700&display=swap"
       rel="stylesheet"
@@ -28,7 +26,6 @@
 
   <body>
     <main>
-      <!-- QUICK NAV -->
       <nav class="quick-nav" aria-label="Quick navigation">
         <div class="quick-nav-inner">
           <a href="#experience">experience</a>
@@ -39,30 +36,28 @@
         </div>
       </nav>
 
-      <!-- INTRO -->
       <header class="intro">
         <h1 class="intro-hello">
           Hi there!<span class="emoji-hand-wave">👋🏼</span>
         </h1>
-
         <h2 class="intro-tagline">
           I’m <strong>Tri Watanasuparp</strong> – I love building things,
           solving problems, and figuring out how technology can
           <strong>create better ways of doing things.</strong>
         </h2>
-
         <p>
-          My goal is simple:
+          I’m a data scientist (M.S. Data Science, Northeastern) who builds
+          <strong>NLP, LLM-evaluation, and data-quality pipelines</strong> in
+          Python and SQL. My goal is simple:
           <strong
             >make complicated things clearer, useful, and a little more
             interesting.</strong
           >
         </p>
-
         <h3 class="intro-contact">
-          <a href="mailto:watanasuparptri@gmail.com" class="highlight-link">
-            watanasuparptri@gmail.com
-          </a>
+          <a href="mailto:watanasuparptri@gmail.com" class="highlight-link"
+            >watanasuparptri@gmail.com</a
+          >
         </h3>
       </header>
 
@@ -70,7 +65,6 @@
       <section class="section experience" id="experience">
         <div class="section-title">where I’ve worked</div>
         <div class="section-content">
-          <!-- Lightcast -->
           <div class="job">
             <div class="place-time">
               <div class="job-company">Lightcast</div>
@@ -82,31 +76,37 @@
                 <strong
                   >Transformed and validated 140,000+ Thai job postings</strong
                 >
-                using Python, SQL, and RegEx to clean, normalize, and structure
+                using Python and RegEx to clean, normalize, and structure
                 unstructured job data for labor-market analytics
               </li>
               <li>
-                <strong>Engineered Python/SQL data pipelines</strong> using
-                Pandas, joins, aggregations, and window functions to standardize
-                job skills across taxonomy IDs and English skill categories
-              </li>
-              <li>
-                <strong>Improved data reliability</strong> through systematic
-                data-quality checks and error analysis to identify duplicate,
-                incomplete, and misclassified records before downstream
-                analytics
+                <strong>Cut manual review time 60%</strong> by building 80+
+                RegEx rules and Python text-parsing workflows
               </li>
               <li>
                 <strong
-                  >Evaluated a prompt-based skill extraction workflow</strong
+                  >Removed 1,000+ duplicate, irrelevant, and spam
+                  records</strong
                 >
-                through annotation and error analysis, achieving
+                through data-quality checks and error analysis before downstream
+                analytics
+              </li>
+              <li>
+                <strong>Engineered Python data pipelines</strong> using
+                Pandas to standardize job skills across taxonomy IDs and English skill categories
+              </li>
+              <li>
+                <strong
+                  >Adapted and evaluated a two-round GPT-4o-mini
+                  skill-extraction pipeline</strong
+                >
+                (recall-first extraction, then precision-focused refinement)
+                against an annotated sample, measuring
                 <strong>0.59 F1, 0.56 precision, and 0.62 recall</strong>
               </li>
             </ul>
           </div>
 
-          <!-- Cognex -->
           <div class="job">
             <div class="place-time">
               <div class="job-company">Cognex Corporation</div>
@@ -132,24 +132,18 @@
             </p>
           </div>
 
-          <!-- Silicon Valley Bank -->
           <div class="job">
             <div class="place-time">
               <div class="job-company">Silicon Valley Bank</div>
               <div class="job-time">Jan 2022 – Jun 2022</div>
             </div>
             <div class="job-position">Digital Marketing & Analytics Co-op</div>
-            <p>
-              • Analyzed <strong>digital marketing performance</strong> across
-              CTR, conversion, and engagement KPIs using Google Analytics to
-              identify campaign trends and optimization opportunities<br />
-              • Evaluated email campaign effectiveness through
-              <strong>A/B testing</strong>, comparing open and click-through
-              rates and translating results into data-driven recommendations<br />
-              • Developed <strong>recurring dashboards and reports</strong> that
-              synthesized KPI trends into actionable insights for marketing
-              stakeholders
+                       <p>
+              • Built <strong>3 recurring dashboards</strong> for marketing managers on a retail template design campaign, synthesizing CTR, conversion, and engagement KPIs into actionable insights<br />
+              • Analyzed <strong>digital marketing performance</strong> in Google Analytics to identify campaign trends and optimization opportunities<br />
+              • Evaluated email campaign effectiveness through <strong>A/B testing</strong>, comparing open and click-through rates and translating results into data-driven recommendations
             </p>
+          </div>
           </div>
         </div>
       </section>
@@ -157,10 +151,10 @@
       <!-- PROJECTS -->
       <section class="section projects" id="projects">
         <div class="section-title">things I've built</div>
-
         <div class="section-content">
           <div class="projects-wrapper">
-            <!-- IDL -->
+
+                                <!-- IDL -->
             <article class="project">
               <div class="project-header">
                 <div>
@@ -171,99 +165,51 @@
                   <div class="project-date">Sep. 2026 – Present</div>
                 </div>
               </div>
-
               <p class="project-hook">
                 Turning dance competition data into something you can actually
                 explore.
               </p>
-
               <p class="project-description">
-                Built a data pipeline and analytics workflow around
-                International Dance League performances, connecting competition
-                results with song-level metadata to understand performance and
+                A data pipeline and analytics workflow around International
+                Dance League performances, connecting competition results with
+                song-level metadata to understand performance and
                 music-selection patterns.
               </p>
-
               <ul class="project-details">
                 <li>
-                  Built a <strong>Python/Pandas data pipeline</strong> to
-                  transform and validate 45 verified performances and associated
-                  songs into normalized BigQuery tables.
+                  Built a <strong>Python/Pandas pipeline</strong> that validated
+                  and normalized
+                  <strong>45 verified performances and 68 songs</strong> into
+                  BigQuery tables.
                 </li>
                 <li>
                   Designed a
-                  <strong>relational BigQuery data model</strong> across events,
-                  teams, songs, performances, and performance-song
-                  relationships.
+                  <strong>BigQuery warehouse of 10 tables</strong> (song and
+                  performance dimensions and facts, MusicBrainz enrichment, and
+                  derived analytics tables for team genre mix, music strategy,
+                  and event trends).
                 </li>
                 <li>
-                  Developed <strong>SQL analytical views</strong> using joins,
+                  Wrote <strong>4 SQL analytical views</strong> using joins,
                   aggregations, and window functions to analyze team scores,
                   song usage, and competition-level music trends.
                 </li>
                 <li>
-                  Building an interactive <strong>Tableau dashboard</strong> to
-                  visualize team performance, song-selection patterns, and
-                  competition trends.
+                  Enriched <strong>57 of 68 songs (84%)</strong> with
+                  MusicBrainz release date, genre, and artist metadata.
+                </li>
+                <li>
+                  Built
+                  <strong>2 BigQuery-connected Tableau dashboards</strong> so
+                  far, covering team performance and song-selection patterns.
                 </li>
               </ul>
-
               <div class="project-used">
                 <span class="project-used-item">Python</span>
                 <span class="project-used-item">Pandas</span>
                 <span class="project-used-item">SQL</span>
                 <span class="project-used-item">BigQuery</span>
                 <span class="project-used-item">Tableau</span>
-              </div>
-            </article>
-
-            <!-- TASTEMATCH -->
-            <article class="project">
-              <div class="project-header">
-                <div>
-                  <h3 class="project-title">
-                    TasteMatch CA — Finding Your Next Favorite
-                  </h3>
-                  <div class="project-date">Jan. 2026 – Apr. 2026</div>
-                </div>
-              </div>
-
-              <p class="project-hook">
-                What if finding a restaurant felt more like asking a friend?
-              </p>
-
-              <p class="project-description">
-                Developed a personalized restaurant recommendation system that
-                combines structured restaurant data, review information,
-                collaborative filtering, content-based features, semantic
-                embeddings, and vector search.
-              </p>
-
-              <ul class="project-details">
-                <li>
-                  Engineered recommendations across
-                  <strong>7,000+ California restaurants</strong> by integrating
-                  structured restaurant data with review information.
-                </li>
-                <li>
-                  Implemented a
-                  <strong>Python/SQL retrieval pipeline</strong> using HNSW
-                  vector search and RAG to generate ranked recommendations.
-                </li>
-                <li>
-                  Evaluated recommendation quality using
-                  <strong>Precision, Recall, F1, NDCG, and MRR</strong> to
-                  benchmark ranking performance.
-                </li>
-              </ul>
-
-              <div class="project-used">
-                <span class="project-used-item">Python</span>
-                <span class="project-used-item">SQL</span>
-                <span class="project-used-item">Embeddings</span>
-                <span class="project-used-item">RAG</span>
-                <span class="project-used-item">ChromaDB</span>
-                <span class="project-used-item">Streamlit</span>
               </div>
             </article>
 
@@ -277,18 +223,15 @@
                   <div class="project-date">Sep. 2026 – Present</div>
                 </div>
               </div>
-
               <p class="project-hook">
                 A workspace for teams that spend a lot of time saying “wait,
                 which version?”
               </p>
-
               <p class="project-description">
-                Building a full-stack collaboration platform designed around the
-                way dance teams actually work — from choreography and rehearsals
-                to videos, corrections, and team communication.
+                A full-stack collaboration platform built around how dance teams
+                actually work, from choreography and rehearsals to videos,
+                corrections, and team communication.
               </p>
-
               <ul class="project-details">
                 <li>
                   Designed support for
@@ -299,19 +242,18 @@
                 </li>
                 <li>
                   Built timestamped video corrections so dancers can connect
-                  feedback directly to specific moments in a routine.
+                  feedback to specific moments in a routine.
                 </li>
                 <li>
                   Designed a <strong>PostgreSQL + Supabase</strong> backend with
                   Row Level Security for permission-aware team data.
                 </li>
                 <li>
-                  Developing the web application with
-                  <strong>Next.js and TypeScript</strong>
-                  around a structured relational data model.
+                  Developing the web app with
+                  <strong>Next.js and TypeScript</strong> on a structured
+                  relational data model.
                 </li>
               </ul>
-
               <div class="project-used">
                 <span class="project-used-item">Next.js</span>
                 <span class="project-used-item">TypeScript</span>
@@ -320,55 +262,91 @@
               </div>
             </article>
 
+            
+            <!-- TASTEMATCH -->
+            <article class="project">
+              <div class="project-header">
+                <div>
+                  <h3 class="project-title">
+                    <a
+                      href="https://github.com/triwatana/catastematch-restaurant-recommender"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >TasteMatch CA — Finding Your Next Favorite</a
+                    >
+                  </h3>
+                  <div class="project-date">
+                    Jan. 2026 – Apr. 2026 · team of 3
+                  </div>
+                </div>
+              </div>
+              <p class="project-hook">
+                What if finding a restaurant felt more like asking a friend?
+              </p>
+              <p class="project-description">
+                A hybrid restaurant recommender for Santa Barbara, built with
+                two teammates. It combines semantic search, content-based
+                filtering, and collaborative filtering, and surfaces the
+                restaurants that several models agree on.
+              </p>
+              <ul class="project-details">
+                <li>
+                  My part: built the
+                  <strong>TF-IDF content-based filtering model</strong> over
+                  <strong>1,036 restaurants</strong>, computing cosine
+                  similarity across all restaurant pairs on category, price, and
+                  attribute features.
+                </li>
+                <li>
+                  Teammates built the
+                  <strong>ChromaDB semantic search</strong> (all-MiniLM-L6-v2
+                  embeddings, HNSW index) and the
+                  <strong>ALS collaborative filter</strong> trained on ~44,000
+                  Yelp reviews.
+                </li>
+                <li>
+                  The combined system reached
+                  <strong>0.783 Precision@5 and 0.833 NDCG@5</strong> (team
+                  evaluation).
+                </li>
+              </ul>
+              <div class="project-used">
+                <span class="project-used-item">Python</span>
+                <span class="project-used-item">TF-IDF</span>
+                <span class="project-used-item">Semantic Search</span>
+                <span class="project-used-item">ChromaDB</span>
+                <span class="project-used-item">Recommender Systems</span>
+                <span class="project-used-item">Streamlit</span>
+              </div>
+            </article>
+
             <!-- YOUTUBE SPAM -->
             <article class="project">
               <div class="project-header">
                 <div>
                   <h3 class="project-title">
-                    YouTube Spam Detection — Teaching a Model to Spot the Weird
-                    Stuff
+                    YouTube Spam Detection — Teaching a Model to Spot the Weird Stuff
                   </h3>
                   <div class="project-date">Jul 2026 – Aug 2026</div>
                 </div>
               </div>
-
               <p class="project-hook">
-                Can a model tell useful comments from spam — even when the spam
-                looks different from what it has seen before?
+                Can a model tell useful comments from spam, even when the spam looks different from anything it has seen before?
               </p>
-
               <p class="project-description">
-                Built an NLP classification system to detect spam in YouTube
-                comments, with a focus on generalization across communities and
-                robustness to obfuscated spam.
+                An NLP classifier for YouTube comment spam, built to generalize across communities and hold up against obfuscated spam.
               </p>
-
               <ul class="project-details">
                 <li>
-                  Trained a
-                  <strong>TF-IDF + Logistic Regression</strong> classifier on
-                  <strong>1,956 YouTube comments</strong>.
+                  Trained a <strong>TF-IDF + Logistic Regression</strong> classifier on <strong>1,956 YouTube comments</strong>, reaching <strong>0.955 F1</strong> on a held-out test set.
                 </li>
                 <li>
-                  Tested word-level, character-level, and augmented TF-IDF
-                  representations to improve robustness.
+                  Compared word-level, character-level, and augmented TF-IDF representations to improve robustness, and kept <strong>0.938 average F1 on unseen communities</strong>, only 1.7 points below the in-distribution score.
                 </li>
                 <li>
-                  Achieved <strong>0.955 test F1</strong> on the held-out test
-                  set.
-                </li>
-                <li>
-                  Achieved
-                  <strong>0.938 average F1 on unseen communities</strong>,
-                  showing strong generalization outside the original community
-                  distribution.
-                </li>
-                <li>
-                  Deployed the classifier through <strong>Streamlit</strong>
-                  for interactive comment classification.
+                  Deployed the classifier as a <strong>Streamlit</strong> app for interactive comment classification.
                 </li>
               </ul>
-
               <div class="project-used">
                 <span class="project-used-item">Python</span>
                 <span class="project-used-item">NLP</span>
@@ -378,6 +356,8 @@
                 <span class="project-used-item">Streamlit</span>
               </div>
             </article>
+
+
 
             <!-- EXOPLANET -->
             <article class="project">
@@ -390,39 +370,31 @@
                   <div class="project-date">Apr 2025 - May 2025</div>
                 </div>
               </div>
-
               <p class="project-hook">
                 A little machine learning, a lot of “what if?”
               </p>
-
               <p class="project-description">
-                Built a classification pipeline to predict potentially habitable
-                exoplanets, focusing on model comparison, class imbalance, and
-                understanding how the underlying data affected performance.
+                A classification pipeline that predicts potentially habitable
+                exoplanets, focused on model comparison and how class imbalance
+                affected performance.
               </p>
-
               <ul class="project-details">
                 <li>
                   Compared
-                  <strong>SVM, Random Forest, and Logistic Regression</strong>
-                  models for habitability classification.
+                  <strong>SVM, Random Forest, and Logistic Regression</strong>,
+                  reaching a <strong>0.78 F1 score</strong> on an imbalanced
+                  problem.
                 </li>
                 <li>
-                  Achieved a <strong>0.78 F1 score</strong> on an imbalanced
-                  classification problem.
-                </li>
-                <li>
-                  Used <strong>cross-validation</strong> to evaluate whether
-                  model performance generalized beyond a single train/test
-                  split.
+                  Used <strong>cross-validation</strong> to check that
+                  performance held beyond a single train/test split.
                 </li>
                 <li>
                   Investigated
-                  <strong>class imbalance and multicollinearity</strong>
-                  to understand their effect on model behavior.
+                  <strong>class imbalance and multicollinearity</strong> to
+                  understand their effect on model behavior.
                 </li>
               </ul>
-
               <div class="project-used">
                 <span class="project-used-item">Python</span>
                 <span class="project-used-item">Scikit-learn</span>
@@ -441,6 +413,22 @@
         <div class="section-content">
           <div class="skills-wrapper">
             <div class="skills-category">
+              <div class="skills-category-label">AI & LLM</div>
+              <ul>
+                <li class="skills-category-item">LLM Prompt Pipelines</li>
+                <li class="skills-category-item">LLM Evaluation</li>
+                <li class="skills-category-item">GPT-4o-mini</li>
+                <li class="skills-category-item">Embeddings</li>
+                <li class="skills-category-item">Semantic Search</li>
+                <li class="skills-category-item">
+                  Vector Databases (ChromaDB)
+                </li>
+                <li class="skills-category-item">Recommendation Systems</li>
+                <li class="skills-category-item">Claude Code</li>
+                <li class="skills-category-item">GitHub Copilot</li>
+              </ul>
+            </div>
+            <div class="skills-category">
               <div class="skills-category-label">
                 Programming & Data Analysis
               </div>
@@ -454,7 +442,6 @@
                 <li class="skills-category-item">Statistical Analysis</li>
                 <li class="skills-category-item">Hypothesis Testing</li>
                 <li class="skills-category-item">A/B Testing</li>
-                <li class="skills-category-item">KPI Analysis</li>
               </ul>
             </div>
             <div class="skills-category">
@@ -462,17 +449,14 @@
                 Data Engineering & Databases
               </div>
               <ul>
-                <li class="skills-category-item">Data Wrangling</li>
                 <li class="skills-category-item">ETL</li>
                 <li class="skills-category-item">Data Quality</li>
                 <li class="skills-category-item">SQL Joins</li>
-                <li class="skills-category-item">Aggregations</li>
                 <li class="skills-category-item">Window Functions</li>
+                <li class="skills-category-item">BigQuery</li>
                 <li class="skills-category-item">PostgreSQL</li>
                 <li class="skills-category-item">MySQL</li>
-                <li class="skills-category-item">BigQuery</li>
                 <li class="skills-category-item">MongoDB</li>
-                <li class="skills-category-item">ChromaDB</li>
               </ul>
             </div>
             <div class="skills-category">
@@ -484,8 +468,6 @@
                 <li class="skills-category-item">NLP</li>
                 <li class="skills-category-item">TF-IDF</li>
                 <li class="skills-category-item">Logistic Regression</li>
-                <li class="skills-category-item">Embeddings</li>
-                <li class="skills-category-item">Recommendation Systems</li>
               </ul>
             </div>
             <div class="skills-category">
@@ -497,7 +479,6 @@
                 <li class="skills-category-item">Streamlit</li>
                 <li class="skills-category-item">Google Analytics</li>
                 <li class="skills-category-item">Dashboard Development</li>
-                <li class="skills-category-item">Data Reporting</li>
               </ul>
             </div>
             <div class="skills-category">
@@ -529,7 +510,6 @@
             </div>
             <div class="job-position">M.S. in Data Science · GPA 3.8/4.0</div>
           </div>
-
           <div class="job">
             <div class="place-time">
               <div class="job-company">
@@ -543,8 +523,6 @@
           </div>
         </div>
       </section>
-
-      <!-- JUST FOR FUN :) -->
 
       <section class="section">
         <div class="section-title">outside the numbers</div>
@@ -560,7 +538,6 @@
         </div>
       </section>
 
-      <!-- FOOTER -->
       <footer class="footer section" id="contact">
         <div class="footer-links">
           <a href="mailto:watanasuparptri@gmail.com">email</a>
